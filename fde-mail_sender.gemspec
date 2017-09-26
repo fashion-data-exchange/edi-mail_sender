@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "fde/edi/mail_sender/version"
+require "fde/mail_sender/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "fde-edi-mail_sender"
-  spec.version       = FDE::Edi::MailSender::VERSION
+  spec.name          = "fde-mail_sender"
+  spec.version       = FDE::MailSender::VERSION
   spec.authors       = ["Felix Langenegger"]
   spec.email         = ["f.langenegger@fadendaten.ch"]
 

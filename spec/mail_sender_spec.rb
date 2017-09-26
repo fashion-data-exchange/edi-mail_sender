@@ -1,8 +1,8 @@
 require "spec_helper"
 
-RSpec.describe FDE::Edi::MailSender do
+RSpec.describe FDE::MailSender do
   it "has a version number" do
-    expect(FDE::Edi::MailSender::VERSION).not_to be nil
+    expect(FDE::MailSender::VERSION).not_to be nil
   end
 
   context 'configuration' do

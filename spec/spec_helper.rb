@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "fde/edi/mail_sender"
+require "fde/mail_sender"
 
 require 'pry'
 require 'dotenv'
@@ -23,7 +23,7 @@ RSpec.configure do |config|
 end
 
 
-FDE::Edi::MailSender.configure do |config|
+FDE::MailSender.configure do |config|
   config.address = ENV.fetch('SMTP_MAIL_ADDRESS')
   config.port = ENV.fetch('SMTP_MAIL_PORT')
   config.domain = ENV.fetch('SMTP_MAIL_DOMAIN')

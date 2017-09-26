@@ -1,6 +1,6 @@
 require "spec_helper"
 
-RSpec.describe FDE::Edi::Mail do
+RSpec.describe FDE::Mail do
 
   let(:from) { 'test.edi@example.com' }
   let(:to) { 'edi@example.com' }
@@ -43,7 +43,7 @@ RSpec.describe FDE::Edi::Mail do
 
   describe 'deliver!' do
     it 'should deliver the mail and return a Mail::SMTP Object' do
-      allow(subject).to receive(:deliver!) { FDE::Edi::MailSender.smtp_account }
+      allow(subject).to receive(:deliver!) { FDE::MailSender.smtp_account }
       expect(subject.deliver!).to be_a(Mail::SMTP)
     end
   end
